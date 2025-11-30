@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    padding: 0px;
+    background: #171717;
+    color: #f2f2f2;
+    font-family: "Grenze Gotisch", serif;
+}
+
+h3 {
+    font-size: 3.0rem;
+    line-height: 3.0rem;
+    margin: 16px 0 40px 0;
+    font-family: "Grenze Gotisch", serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    font-family: "Montagu Slab", serif;
+    
+    box-sizing: border-box;
+}
+
+
+.btn-link {
+    background-color: #f2f2f2;
+    color: #171717;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 24px;
+    font-family: "Montagu Slab", serif;
+}
+
+/* Masonry grid */
+.masonry-grid {
+    column-count: 4;
+    column-gap: 15px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 200px;
+
+}
+
+.masonry-item {
+    margin-bottom: 15px;
+    break-inside: avoid;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.masonry-item.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.masonry-item img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover zoom */
+.masonry-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease;
+}
+
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+
+.container {
+    padding: 80px 80px 0 80px;
+}
+
+.header {
+    background-image: url("img/header_img.png");
+    background-color: #171717;
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px  solid #4A424C;
+    background-color: #171717;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.decoration-left {
+    width: 46px;
+    position: absolute;
+    bottom: -46px;
+    left: 0px;
+}
+
+.decoration-right {
+    width: 46px;
+    position: absolute;
+    bottom: -46px;
+    right: 0px;
+}
+
+.menu a {
+    padding: 4px 8px;
+    background-color: #171717;
+    border-radius: 20px;
+}
+
+.menu img {
+    width: 64px;
+}
+
+.header-title {
+    flex-direction: column;
+}
+
+.frame-bottom {
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+.frame-top {
+    position: absolute;
+    top: 80;
+    right:0;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    width: 100%;
+    background-color: #cf254b; /* pink tone like the reference */
+    display: flex;
+    padding: 20px 0 ;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    text-align: center;
+    color: white;
+    font-family: "Montagu Slab", serif;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+.insta-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.insta-icon {
+    font-size: 32px; /* matches the reference style */
+    display: inline-block;
+    transform: translateY(2px);
+}
+
+.email-line {
+    margin-top: 10px;
+}
+
+
+.insta-line i {
+    font-size: 32px;
+}
+
+
+
+
+/* ---------------------------------------- */
+/*                 HERO SECTION             */
+/* ---------------------------------------- */
+
+.hero-section {
+    width: 100%;
+    padding: 100px 0px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Montagu Slab", serif;
+}
+
+.hero-container {
+    max-width: 800px;
+    animation: fadeIn 1.2s ease both;
+}
+
+.hero-logo {
+    width: 80%;
+    max-width: 480px;
+    margin-bottom: 40px;
+}
+
+.hero-description {
+    font-size: 28px;
+    line-height: 1.45;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.hero-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-artist {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-artist:hover {
+    color: #cf254b;
+}
+
+/* Fade-in animation (optional) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero-description {
+        font-size: 22px;
+    }
+    .hero-title {
+        font-size: 26px;
+    }
+    .hero-artist {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fade effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .masonry-grid { column-count: 3; }
+
+    .hueco-logo{
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .masonry-grid { column-count: 2; }
+
+    .container {
+        padding: 80px 40px 0 40px;
+    }
+
+    .hueco-logo{
+        width: 200px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .header {
+        min-height: 500px;
+        background-image: url("img/header_img_mobile.png");
+    }
+
+    .frame-bottom {
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width: 50%;
+    }
+
+    .contact-content {
+        text-align: center;
+        color: white;
+        font-family: "Montagu Slab", serif;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .decoration-left, .decoration-right {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .masonry-grid { column-count: 1; }
+    .close-btn { font-size: 32px; top: 15px; right: 20px; }
+}
